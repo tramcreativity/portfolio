@@ -1,0 +1,802 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+body {
+  margin: 0;
+  font: 1rem "Nunito", sans-serif;
+  color: #575757;
+}
+.flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+.center-text {
+  text-align: center;
+}
+
+.container {
+  width: 89%;
+  margin: 0 auto;
+}
+h1 {
+  font: 700 1.375rem "Cormorant Garamond", serif;
+  color: #c5a459;
+  margin: 2rem auto 1rem;
+}
+h2 {
+  font: 600 0.875rem "Bodoni Moda", serif;
+  color: #1a361a;
+}
+p,
+form label,
+form input,
+form textarea
+ {
+  font: 400 0.688rem "Nunito", sans-serif;
+  color: #575757;
+}
+.button {
+  text-decoration: none;
+  font: 500 0.625rem "Nunito", sans-serif;
+  color: #575757;
+  background-color: white;
+  padding: 0.438rem 0.938rem;
+  border-radius: 0.938rem;
+  border: 2px solid #575757;
+}
+.button:hover {
+  color: white;
+  background-color: #c5a459;
+  border: #c5a459;
+}
+
+/* HEADER */
+header {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+/* LOGO */
+.logo a img {
+  height: 2.613rem;
+}
+/* NAVBAR */
+.menu,
+.footer-menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header ul li a,
+footer ul li a {
+  text-decoration: none;
+  color: #1a361a;
+  font: 600 0.75rem "Bondoni Moda", serif;
+}
+header ul li a:hover {
+  color: #c5a459;
+  background-color: none;
+}
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#menu-toggle {
+  display: none;
+}
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #1a361a;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+/* HERO */
+.hero {
+  background: url(../images/hero.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+.hero-content {
+  text-align: left;
+  padding: 0.75rem 7rem 1.58rem 0;
+}
+/* EXPERTISE */
+.expertise {
+  flex-direction: column;
+}
+.category {
+  margin: 1.563rem 5.75rem 0rem 5.75rem;
+}
+.category img {
+  height: 3.813rem;
+}
+.expertise a {
+  margin: 1rem auto 2rem auto;
+}
+/* CLIENTS */
+.gallery {
+  flex-direction: column;
+  align-items: center;
+}
+.gallery-image {
+  width: 40%;
+}
+.gallery img {
+  width: 100%;
+  margin: 0.675rem 0;
+}
+/* TESTIMONIALS */
+.testimonials h2 {
+  font-weight: 700;
+}
+.testimonials p {
+  font-style: italic;
+}
+.arrows {
+  margin: auto 0;
+  color: #d9d9d9;
+}
+.arrows:hover {
+  color: #c5a459;
+}
+.testimonials div {
+  margin: 0 2rem;
+}
+.fa-solid {
+  font-size: 2em;
+}
+/* CONTACT */
+.contact {
+  margin: 1rem auto;
+}
+.contact hr,
+.presentation hr,
+.resume hr {
+  margin: 2rem auto;
+  height: 1px;
+  background-color: #d9d9d9;
+}
+/* FOOTER */
+footer {
+  flex-direction: column;
+}
+.footer-section {
+  flex-direction: column;
+}
+.footer-menu {
+  margin: 0 2.875rem;
+}
+footer ul li a {
+  color: #c5a459;
+  font: 600 0.5rem "Nunito", sans-serif;
+}
+footer ul li a:hover {
+  color: #1a361a;
+}
+.socialmedia {
+  width: 40%;
+  margin: 2rem auto 0.5rem;
+}
+.socialmedia img {
+  height: 1.25rem;
+}
+.copyright {
+  flex-direction: column;
+}
+.copyright p {
+  font: 300 0.375rem "Nunito", sans-serif;
+  padding-bottom: 0.5rem;
+}
+/* INTRODUCTION */
+.introduction {
+  flex-direction: column-reverse;
+  overflow: hidden;
+}
+.about {
+  width: 100%;
+}
+.profile-pics {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  overflow: hidden;
+  margin: -2.5rem 0;
+}
+.profile-pics figure {
+  display: flex;
+  margin: 0;
+}
+.profile-pics figure:nth-child(1) {
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* margin-right: -2.188rem;
+  margin-bottom: -1.25rem; */
+}
+.profile-pics figure:nth-child(2) {
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-left: -2.188rem;
+  margin-bottom: -1.25rem;
+}
+.profile-pics figure:nth-child(3) {
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-right: -2.188rem;
+  margin-top: -1.25rem;
+}
+.profile-pics figure:nth-child(4) {
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* margin-left: -2.188rem;
+  margin-top: -1.25rem; */
+}
+.profile-pics img {
+  width: 100%;
+  height: 75%;
+  object-fit: contain;
+}
+.profile-pics figure:nth-child(1) img {
+  object-position: left;
+}
+.profile-pics figure:nth-child(2) img {
+  object-position: left;
+}
+.profile-pics figure:nth-child(3) img {
+  object-position: right;
+}
+.profile-pics figure:nth-child(4) img {
+  object-position: right;
+}
+/* RESUME */
+.resume {
+  margin: auto 0;
+}
+.resume object {
+  margin: 0 1rem;
+  width: 100%;
+  height: 100vh;
+}
+/* CALENDLY */
+.calendly {
+  margin: 0 auto;
+}
+.calendly a,
+.contact-form h2 a,
+.presentation a {
+  text-decoration: none;
+  color: #c5a459;
+}
+.calendly a:hover,
+.contact-form h2 a:hover,
+.presentation a:hover {
+  color: #1a361a;
+  text-decoration: underline;
+}
+.calendly-inline-widget {
+  min-width: 10rem;
+  height: 65rem;
+}
+/* CONTACT FORM */
+.contact-form {
+  margin-top: 2rem;
+}
+label {
+  display: inline-block;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  line-height: 1.3em;
+}
+form > * {
+  padding: 2.55%;
+  width: 100%;
+  color: black;
+  text-align: left;
+  border-radius: 1.5em;
+  border-color: #bea55a;
+  border-width: 1px;
+  font-size: 0.688rem;
+  margin: 0.2em;
+}
+.g-recaptcha {
+  border: none;
+}
+.submit-button {
+  margin: 1rem auto 2rem;
+  width: 50%;
+}
+/*INPUT BORDER*/
+form > *:not(label) {
+  border-style: solid;
+  font-size: 0.5rem;
+}
+/* WORK */
+.work,
+.work-group {
+  flex-direction: column;
+}
+.individual-work {
+  padding: 0 2.875rem;
+  margin-bottom: 2rem;
+}
+.individual-work a {
+  text-decoration: none;
+}
+.individual-work a:hover {
+  text-decoration: underline;
+  color: #1a361a;
+}
+.individual-work p {
+  margin-top: 0;
+}
+.individual-work img {
+  width: 100%;
+}
+.work hr,
+.contact-form hr {
+  width: 100%;
+  color: #d9d9d9;
+  height: 1px;
+  margin-bottom: 2rem;
+}
+/* INDIVIDUAL WORK */
+.project-hero {
+  height: 0;
+  padding-top: 40%;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+.cafe-des-beaux-arts-hero {
+  background: url(/images/cafe-des-beaux-art/website.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.bloom-hero {
+  background: url(/images/bloom/bloom-thumbnail.jpg) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.terra-hero {
+  background: url(/images/terra/newsletter-1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.shepherds-hero {
+  background: url(/images/shepherd-hope/poster-group.jpg) no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.paddyfield-hero {
+  background: url(/images/the-paddy-field/storefront.jpg) no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.neroli-hero {
+  background: url(/images/neroli/mockup-5.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.me-recipe-hero {
+  background: url(/images/me-recipe/cover-page.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.craft-station-hero {
+  background: url(/images/craft-station/cover-page.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.presentation img {
+  margin: 0.5rem auto;
+  width: 89%;
+}
+/* SLIDESHOW */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 89%;
+  position: relative;
+  margin: auto;
+}
+.magazine-slideshow {
+  max-width: 70%;
+  position: relative;
+  margin: auto;
+}
+.mySlides img {
+  width: 100%;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  font-size: 1.375rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 0.688rem;
+  margin-top: -1.375rem;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+  user-select: none;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.next {
+  right: 0;
+}
+.prev {
+  left: 0;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #1a361a;
+  font-size: 0.688rem;
+  padding: 0.5rem 0.75rem;
+  position: absolute;
+  top: 0;
+}
+.active {
+  background-color: #717171;
+}
+/* MEDIA QUERIES */
+@media (min-width: 375px) and (max-width: 768px) /* for mobile */ {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #1a361a;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: white;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #1a361a;
+  }
+}
+@media (min-width: 576px) /* for mobile */ {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2,
+  .prev,
+  .next {
+    font-size: 1rem;
+  }
+  p,
+  .button,
+  footer ul li a,
+  form label,
+  form input,
+  form textarea,
+  .numbertext {
+    font-size: 0.8rem;
+  }
+  .hero-content {
+    padding-right: 15rem;
+  }
+  .hero-content p {
+    margin-bottom: 1.5rem;
+  }
+  .category img {
+    height: 5rem;
+  }
+  .socialmedia {
+    margin: 1.5rem auto 1rem;
+  }
+  .socialmedia img {
+    height: 1.6rem;
+  }
+  .profile-pics {
+    margin: -4rem 0;
+  }
+  .resume object {
+    margin: 0 2rem;
+  }
+}
+@media (min-width: 768px) /* for tablets */ {
+  .logo a img {
+    height: 3.5rem;
+  }
+  h1,
+  .prev,
+  .next {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p,
+  .button,
+  header ul li a,
+  form label,
+  form input,
+  form textarea,
+  .numbertext {
+    font-size: 1rem;
+  }
+  .hero-content {
+    padding: 2.313rem 18rem 2rem 0;
+  }
+  .category img {
+    height: 7rem;
+  }
+  .gallery {
+    flex-direction: row;
+  }
+  .gallery-image {
+    width: 30%;
+  }
+  .contact hr,
+  .presentation hr,
+  .resume hr {
+    margin: 3rem auto;
+  }
+  .fa-solid {
+    font-size: 2.5em;
+  }
+  .footer-menu {
+    margin: 0 5rem;
+  }
+  .copyright p {
+    font-size: 0.5rem;
+  }
+  .socialmedia {
+    width: 25%;
+    margin: 2rem auto 1rem;
+  }
+  .socialmedia img {
+    height: 1.8rem;
+  }
+  .profile-pics {
+    margin: -5rem 0;
+  }
+  .work-group {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .individual-work {
+    width: 100%;
+  }
+  .individual-work img {
+    width: 100%;
+    height: 13rem;
+    object-fit: contain;
+  }
+  .work hr,
+  .contact-form hr {
+    margin: 3rem auto;
+  }
+  .calendly-inline-widget {
+    min-width: 10rem;
+    height: 75rem;
+  }
+}
+@media (min-width: 992px) /* for laptops */ {
+  h1 {
+    font-size: 2.5rem;
+    margin: 4rem auto 2rem;
+  }
+  .hero-content {
+    padding: 1rem 25rem 3rem 0;
+  }
+  .hero-content p {
+    margin-bottom: 2rem;
+  }
+  .expertise {
+    margin: 0 auto 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .category {
+    margin: 0;
+    width: 22%;
+    align-self: flex-start;
+  }
+  .category img {
+    width: 5.75rem;
+    height: 5.75rem;
+    object-fit: cover;
+  }
+  .testimonials div {
+    margin: auto 3rem;
+  }
+  .fa-solid {
+    font-size: 3em;
+  }
+  .copyright p {
+    font-size: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .footer-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .footer-section ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+  .socialmedia {
+    margin: 0;
+    width: 30%;
+  }
+  .introduction {
+    flex-direction: row;
+  }
+  .about {
+    width: 70%;
+    padding: 0 0.5rem;
+  }
+  .profile-pics {
+    margin: 0;
+  }
+  .footer-section > div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: center;
+  }
+  .resume {
+    margin: auto 3rem;
+  }
+  .resume object {
+    width: 100vh;
+    height: 100vh;
+  }
+  .individual-work img {
+    height: 16rem;
+  }
+}
+@media (min-width: 1200px) /* for large devices */ {
+  .profile-pics {
+    margin: -4rem 0 -5rem 1rem;
+  }
+}
+@media (min-width: 1440px) /* for large devices */ {
+  h1,
+  .prev,
+  .next {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p,
+  .button,
+  header ul li a,
+  form label,
+  form input,
+  form textarea,
+  .numbertext {
+    font-size: 1.5rem;
+  }
+  footer ul li a {
+    font-size: 1rem;
+  }
+  header {
+    padding: 2em;
+  }
+  .logo a img {
+    height: 5rem;
+  }
+  .hero-content {
+    padding: 6.188rem 35rem 8rem 3rem;
+  }
+  .gallery img {
+    width: 70%;
+  }
+  .contact hr,
+  .presentation hr,
+  .resume hr {
+    margin: 10rem auto 4rem;
+  }
+  .copyright p {
+    font-size: 0.75rem;
+    margin: 2rem auto;
+  }
+  .socialmedia img {
+    height: 2.3rem;
+  }
+  .profile-pics {
+    margin: 0 1rem 0 3rem;
+  }
+  .calendly-inline-widget {
+    min-width: 10rem;
+    height: 50rem;
+  }
+  .individual-work img {
+    width: 30rem;
+    height: 20rem;
+    object-fit: cover;
+  }
+  .work hr,
+  .contact-form hr {
+    margin: 5rem auto;
+  }
+  .presentation img {
+    margin: 1.5rem auto;
+    width: 76%;
+  }
+}

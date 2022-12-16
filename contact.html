@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Contact - Tram Creativity</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="container flex space-between">
+        <!-- LOGO -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo-tram.png" alt="Tram Tran Creativity logo" /></a>
+        </div>
+        <!-- NAVBAR -->
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="work.html">WORK</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </header>
+    <!-- CALENDLY -->
+    <div class="calendly center-text container">
+        <h2>Schedule a free 45-minute appointment with me!</h2>
+        <p><a href="https://help.calendly.com/hc/en-us" target="_blank">How to use Calendly</a></p>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+        <div class="calendly-inline-widget" id="my-calendly-embed"></div>
+    </div>
+    <!-- FORM -->
+    <section class="contact-form center-text container">
+        <h2>Or send me an email <a href="mailto:tram.creativity@gmail.com">here</a> </h2>
+        <hr>
+    </section>
+    <footer class="container center-text flex">
+        <section class="footer-section flex">
+            <ul class="footer-menu space-between">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="work.html">WORK</a></li>
+                <li><a href="resume.html">RESUME</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="copyright container flex">
+                <div class="socialmedia">
+                    <a href="https://www.linkedin.com/in/tramtrank/" target="_blank"><img src="images/icon-linkedin.png"
+                            alt="LinkedIn icon" /></a>
+                </div>
+                <p>Copyright 2022. All rights reserved.</p>
+            </div>
+        </section>
+    </footer>
+    <!-- JAVASCRIPT -->
+    <script>
+        // Create function that parses the URL for params
+        function getURLParameter(sParam) {
+            var sPageURL = window.location.search.substring(1);
+            var sURLVariables = sPageURL.split('&');
+            for (var i = 0; i < sURLVariables.length; i++) {
+                var sParameterName = sURLVariables[i].split('=');
+                if (sParameterName[0] == sParam) {
+                    return sParameterName[1];
+                }
+            }
+        }
+
+        // Initialize the advanced embed code with your params mapped as the values
+        Calendly.initInlineWidget({
+            url: `https://calendly.com/tramtran-art/45min`,
+            parentElement: document.getElementById('my-calendly-embed'),
+            prefill: {
+                firstName: getURLParameter('first_name'),
+                lastName: getURLParameter('last_name'),
+                email: getURLParameter('email'),
+                customAnswers: {
+                    a1: getURLParameter('a1'),
+                    a2: getURLParameter('a2'),
+                    a3: getURLParameter('a3'),
+                }
+            },
+            utm: {
+                utmCampaign: getURLParameter('utm_campaign'),
+                utmSource: getURLParameter('utm_source'),
+                utmMedium: getURLParameter('utm_medium'),
+                utmContent: getURLParameter('utm_content'),
+                utmTerm: getURLParameter('utm_term'),
+            }
+        });
+    </script>
+
+</body>
+
+</html>
