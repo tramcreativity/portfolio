@@ -2,6 +2,25 @@
 <html>
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F1MSM1PRE1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-F1MSM1PRE1');
+    </script>
+    <!-- Header & footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
@@ -13,75 +32,45 @@
 
 <body>
     <!-- HEADER -->
-    <header class="container flex space-between">
-        <!-- LOGO -->
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo-tram.png" alt="Tram Tran Creativity logo" /></a>
-        </div>
-        <!-- NAVBAR -->
-        <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
-        </label>
-        <ul class="menu">
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="work.html">WORK</a></li>
-            <li><a href="resume.html">RESUME</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </header>
+    <div id="header"></div>
     <!-- HERO -->
     <div class="project-hero cafe-des-beaux-arts-hero">
     </div>
     <!-- PROJECT DESCRIPTION -->
     <div class="container center-text">
         <h1>Cafe des Beaux Arts</h1>
-        <p>Founded by barista and coffee enthusiast John Lee. John wanted to introduce the art of craft coffee to the
-            community in Orlando, FL. Coffee isn’t just a quick sip. Coffee isn’t about a busy life and keeping you
-            awake. Brewing coffee is also an art just like other traditional art mediums. The store is expected to
-            attract many customers, especially the middle age adults that enjoy coffee and appreciate the time and
-            conversation spent over a cup of hand-crafted coffee. They also start selling their own crafted coffee beans
-            in-store and online. The client was inspired and wanted the brand to associate with the Art Deco period.
+        <p>I had an exciting opportunity to design a brand identity package and website for a new coffee bar in Orlando,
+            Florida founded by John Lee, a passionate barista and coffee enthusiast. The brand’s goal was to introduce
+            the art of high-quality hand-craft coffee to the local community, emphasizing the importance of the brewing
+            process, and the time and meaningful conversation spent over a cup of hand-crafted coffee. John was inspired
+            by the Art Deco period and would like the brand to be associated with this era.
             <br>
             <br>
-            I was in charge of designing the brand identity package, product packaging and their website.
+            To capture Art Deco, which was known for its elegant, sophisticated style, and streamlined designs, I
+            incorporated bold geometric shapes, such as triangles, squares, and circles, into the logo and brand
+            identity. I used a color scheme of gold and navy to evoke a sense of luxury and sophistication, which is
+            synonymous with the Art Deco era.
             <br>
             <br>
-            <br><b>Category</b>: Branding; Packaging Design; Web Design
+            <br><b>Category</b>: Brand Identity; Web Design
             <br><b>Tools</b>: Adobe Photoshop, Adobe Illustrator, Figma
         </p>
     </div>
     <!-- PROJECT PRESENTATION -->
     <section class="presentation container center-text">
+        <img src="images/cafe-des-beaux-art/styleguide.jpg" alt="Cafe des Beaux Arts's style guide" />
         <img src="images/cafe-des-beaux-art/stationery-set.jpg" alt="Cafe des Beaux Arts's stationery set" />
+        <img src="images/cafe-des-beaux-art/bizcard.jpg" alt="Cafe des Beaux Arts's business cards" />
         <img src="images/cafe-des-beaux-art/thumbnail-packaging-1.jpg" alt="Cafe des Beaux Arts's packaging" />
-        <img src="images/cafe-des-beaux-art/coffeebag.jpg" alt="Cafe des Beaux Arts's coffee bag" />
-        <img src="images/cafe-des-beaux-art/cup-1.jpg" alt="Cafe des Beaux Arts's coffee cup front" />
-        <img src="images/cafe-des-beaux-art/website.jpg" alt="Cafe des Beaux Arts's home page" />
+        <img src="images/cafe-des-beaux-art/merch.jpg" alt="Cafe des Beaux Arts's merchandise" />
+        <img src="images/cafe-des-beaux-art/ad.jpg" alt="Cafe des Beaux Arts's magazine ad" />
+        <img src="images/cafe-des-beaux-art/website.jpg" alt="Cafe des Beaux Arts's website" />
         <p><a href="https://www.figma.com/proto/qSv3CfPOMdABmG60af5TQ3/Cafe-des-Beaux-Arts?node-id=246%3A31&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A2"
                 target="_blank">View full web design here</a></p>
         <hr>
     </section>
     <!-- FOOTER -->
-    <footer class="container center-text flex">
-        <section class="footer-section flex">
-            <ul class="footer-menu space-between">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="work.html">WORK</a></li>
-                <li><a href="resume.html">RESUME</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-            <div class="copyright container flex">
-                <div class="socialmedia">
-                    <a href="https://www.linkedin.com/in/tramtrank/" target="_blank"><img src="images/icon-linkedin.png"
-                            alt="LinkedIn icon" /></a>
-                </div>
-                <p>Copyright 2022. All rights reserved.</p>
-            </div>
-        </section>
-    </footer>
+    <div id="footer"></div>
 </body>
 
 </html>

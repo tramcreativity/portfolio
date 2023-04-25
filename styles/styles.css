@@ -36,8 +36,7 @@ h2 {
 p,
 form label,
 form input,
-form textarea
- {
+form textarea {
   font: 400 0.688rem "Nunito", sans-serif;
   color: #575757;
 }
@@ -55,7 +54,6 @@ form textarea
   background-color: #c5a459;
   border: #c5a459;
 }
-
 /* HEADER */
 header {
   flex-direction: row;
@@ -76,7 +74,11 @@ header {
   margin: 0;
   padding: 0;
 }
-header ul li a,
+header ul li a {
+  text-decoration: none;
+  color: #1a361a;
+  font: 600 1rem "Nunito", serif;
+}
 footer ul li a {
   text-decoration: none;
   color: #1a361a;
@@ -307,15 +309,17 @@ footer ul li a:hover {
 }
 .calendly a,
 .contact-form h2 a,
-.presentation a {
-  text-decoration: none;
+.presentation a,
+.center-text a {
   color: #c5a459;
+  text-decoration: none;
 }
 .calendly a:hover,
 .contact-form h2 a:hover,
-.presentation a:hover {
+.presentation a:hover,
+.center-text a:hover {
   color: #1a361a;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .calendly-inline-widget {
   min-width: 10rem;
@@ -372,8 +376,8 @@ form > *:not(label) {
   text-decoration: none;
 }
 .individual-work a:hover {
-  text-decoration: underline;
-  color: #1a361a;
+  color: #c5a459;
+  text-decoration: none;
 }
 .individual-work p {
   margin-top: 0;
@@ -396,44 +400,35 @@ form > *:not(label) {
   margin-bottom: 1.5rem;
 }
 .cafe-des-beaux-arts-hero {
-  background: url(/images/cafe-des-beaux-art/website.jpg) no-repeat;
+  background: url(/images/cafe-des-beaux-art/thumbnail-packaging-1.jpg)
+    no-repeat;
   background-size: cover;
-  background-position: center center;
-}
-.bloom-hero {
-  background: url(/images/bloom/bloom-thumbnail.jpg) no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-.terra-hero {
-  background: url(/images/terra/newsletter-1.jpg) no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.shepherds-hero {
-  background: url(/images/shepherd-hope/poster-group.jpg) no-repeat;
-  background-size: contain;
   background-position: center center;
 }
 .paddyfield-hero {
-  background: url(/images/the-paddy-field/storefront.jpg) no-repeat;
-  background-size: cover;
-  background-position: top center;
-}
-.neroli-hero {
-  background: url(/images/neroli/mockup-5.jpg) no-repeat;
+  background: url(/images/the-paddy-field/paddyfield-menu.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
+}
+.kims-produce-hero {
+  background: url(/images/kims-produce/kims-truck.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.neroli-hero {
+  background: url(/images/neroli/neroli-website.jpg) no-repeat;
+  background-size: cover;
+  background-position: top center;
 }
 .me-recipe-hero {
   background: url(/images/me-recipe/cover-page.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
-.craft-station-hero {
-  background: url(/images/craft-station/cover-page.jpg) no-repeat;
+.coastcon-hero {
+  background: url(/images/coast-con/coastcon-thumbnail.jpg) no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
 }
 .presentation img {
   margin: 0.5rem auto;
@@ -443,11 +438,6 @@ form > *:not(label) {
 /* Slideshow container */
 .slideshow-container {
   max-width: 89%;
-  position: relative;
-  margin: auto;
-}
-.magazine-slideshow {
-  max-width: 70%;
   position: relative;
   margin: auto;
 }
@@ -464,20 +454,24 @@ form > *:not(label) {
   width: auto;
   padding: 0.688rem;
   margin-top: -1.375rem;
-  color: white;
   font-weight: bold;
   transition: 0.3s ease;
   user-select: none;
-}
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.5);
 }
 .next {
   right: 0;
 }
 .prev {
   left: 0;
+}
+.center-text .prev,
+.center-text .next {
+  color: white;
+}
+.center-text .prev:hover,
+.center-text .next:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #1a361a;
 }
 /* Number text (1/3 etc) */
 .numbertext {

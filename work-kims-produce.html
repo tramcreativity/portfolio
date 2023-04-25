@@ -11,6 +11,16 @@
 
         gtag('config', 'G-F1MSM1PRE1');
     </script>
+    <!-- Header & footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
@@ -22,45 +32,42 @@
 
 <body>
     <!-- HEADER -->
-    <header class="container flex space-between">
-        <!-- LOGO -->
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo-tram.png" alt="Tram Tran Creativity logo" /></a>
+    <div id="header"></div>
+        <!-- HERO -->
+        <div class="project-hero kims-produce-hero">
         </div>
-        <!-- NAVBAR -->
-        <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
-        </label>
-        <ul class="menu">
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="work.html">WORK</a></li>
-            <li><a href="resume.html">RESUME</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </header>
     <!-- PROJECT DESCRIPTION -->
     <div class="container center-text">
-        <h1>COMING SOON!</h1>
-    <footer class="container center-text flex">
-        <section class="footer-section flex">
-            <ul class="footer-menu space-between">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="work.html">WORK</a></li>
-                <li><a href="resume.html">RESUME</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-            <div class="copyright container flex">
-                <div class="socialmedia">
-                    <a href="https://www.linkedin.com/in/tramtrank/" target="_blank"><img src="images/icon-linkedin.png"
-                            alt="LinkedIn icon" /></a>
-                </div>
-                <p>Copyright 2022. All rights reserved.</p>
-            </div>
-        </section>
-    </footer>
+        <h1>Kim's Produce</h1>
+        <p>Kim’s Produce is a wholesale exotic fruit and vegetable business located in Tampa, Florida. The company’s
+            mission is to provide high-quality, fresh produce directly from local farms to local businesses, such as
+            grocery stores and restaurants across Florida. They prioritize building strong relationships with their
+            customers and ensuring customer satisfaction through excellent service and products. Kim’s Produce aims to
+            make it easy and convenient for local businesses to access a wide range of fresh, exotic fruits and
+            vegetables that are not commonly found in the area. Their commitment to providing fresh, healthy produce has
+            made them a trusted source for local businesses in Tampa.
+            <br>
+            <br>
+            My goal was to design a brand identity to help Kim’s Produce stand out in the competitive wholesale market.
+            The new brand identity features a tropical, vibrant color scheme with a memorable design that evokes the
+            image of fresh, tropical fruits and vegetables.
+            <br>
+            <br>
+            <br><b>Category</b>: Brand Identity
+            <br><b>Tools</b>: Adobe Photoshop, Adobe Illustrator
+        </p>
+    </div>
+    <!-- PROJECT PRESENTATION -->
+    <section class="presentation container center-text">
+        <img src="images/kims-produce/kims-styleguide.jpg" alt="Kim's Produce's style guide" />
+        <img src="images/kims-produce/kims-stationery.jpg" alt="Kim's Produce's stationery set" />
+        <img src="images/kims-produce/kims-shirt.jpg" alt="Kim's Produce's shirt" />
+        <img src="images/kims-produce/kims-merch.jpg" alt="Kim's Produce's merchandise" />
+        <img src="images/kims-produce/kims-truck.jpg" alt="Kim's Produce's truck" />
+        <hr>
+    </section>
+    <!-- FOOTER -->
+    <div id="footer"></div>
 </body>
 
 </html>

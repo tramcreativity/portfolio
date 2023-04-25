@@ -11,6 +11,16 @@
 
         gtag('config', 'G-F1MSM1PRE1');
     </script>
+    <!-- Header & footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
@@ -22,82 +32,45 @@
 
 <body>
     <!-- HEADER -->
-    <header class="container flex space-between">
-        <!-- LOGO -->
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo-tram.png" alt="Tram Tran Creativity logo" /></a>
-        </div>
-        <!-- NAVBAR -->
-        <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
-        </label>
-        <ul class="menu">
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="work.html">WORK</a></li>
-            <li><a href="resume.html">RESUME</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </header>
+    <div id="header"></div>
     <!-- HERO -->
     <div class="project-hero neroli-hero">
     </div>
     <!-- PROJECT DESCRIPTION -->
     <div class="container center-text">
         <h1>Neroli Cosmetics</h1>
-        <p>Neroli Cosmetics is a local Florida cosmetics startup company founded in 2020. The brand offers a variety of
-            safe and vegan-friendly skincare and body care products such as body soaps, shampoos, and body lotions using
-            their organic, FDA-approved formula. By using local organic citrus such as oranges, lemons, and grapefruits
-            as main ingredients for the formula, Neroli Cosmetics guarantees the highest standards for product
-            satisfaction and long-lasting commitment to their customers.
-            <br>
-            <br>Neroli Cosmetics is looking forward to starting their online store to market their brand and philosophy,
-            attract more customers, and to distribute the products to all over the US. The design goal is to create an
-            easy navigation, smooth process flow with a gentle, relax yet refreshing feeling from the brand. Success
-            will be measured by increasing sales volumes through the website, website traffic, media coverage and
-            customer survey.
+        <p>Neroli Cosmetics is a Florida-based startup founded in 2020. The company produces a range of safe and
+            vegan-friendly skincare and body care products such as body soaps, shampoos, and body lotions. They source
+            their main ingredients from local, organic citrus farms to ensure that the products meet the highest
+            standards of quality. The brand’s philosophy is centered on respect - for oneself, others, the environment,
+            and the community. This value is at the heart of everything they do. As they launch their online store, they
+            hope to share their philosophy with even more people across the USA.
             <br>
             <br>
+            I was responsible for logo design, packaging design, and designing an aesthetically pleasing and
+            user-friendly online store that reflected the brand’s philosophy and values. I conducted extensive user
+            research and testing to ensure that the website provided a smooth and relaxing experience for customers,
+            with easy navigation and optimized for all devices. The successful launch of the website will be measured by
+            growing sales volumes through the website, website traffic, media coverage, and positive feedback from
+            customers.
             <br>
-            I was in charge of logo design, packaging design and web design.
             <br>
-            <br>
-            <br><b>Category</b>: Packaging Design; Web Design
+            <br><b>Category</b>: Logo Design; Packaging Design; UI & UX Design
             <br><b>Tools</b>: Adobe Photoshop, Adobe Illustrator, Figma
         </p>
     </div>
     <!-- PROJECT PRESENTATION -->
     <section class="presentation container center-text">
-        <img src="images/neroli/mockup-1.jpg" alt="Neroli shampoos" />
-        <img src="images/neroli/mockup-2.jpg" alt="Neroli shampoo and conditioner" />
-        <img src="images/neroli/mockup-3.jpg" alt="Neroli body wash" />
-        <img src="images/neroli/mockup-4.jpg" alt="Neroli foot cream" />
-        <img src="images/neroli/mockup-5.jpg" alt="Neroli hand cream" />
-        <img src="images/neroli/mockup-6.jpg" alt="Neroli facial care" />
-        <img src="images/neroli/neroli-website.jpg" alt="Neroli website mockup" />
+        <img src="images/neroli/neroli-styleguide.jpg" alt="Neroli's style guide'" />
+        <img src="images/neroli/neroli-package.jpg" alt="Neroli's packaging design" />
+        <img src="images/neroli/neroli-sitemap.jpg" alt="Neroli's site map'" />
+        <img src="images/neroli/neroli-mockup.jpg" alt="Neroli website mockup" />
         <p><a href="https://www.figma.com/proto/lg3ACQK7smRgkSqCdYojsr/Neroli-Cosmetics?node-id=13%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=13%3A2"
                 target="_blank">View full web design here</a></p>
         <hr>
     </section>
-    <footer class="container center-text flex">
-        <section class="footer-section flex">
-            <ul class="footer-menu space-between">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="work.html">WORK</a></li>
-                <li><a href="resume.html">RESUME</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-            <div class="copyright container flex">
-                <div class="socialmedia">
-                    <a href="https://www.linkedin.com/in/tramtrank/" target="_blank"><img src="images/icon-linkedin.png"
-                            alt="LinkedIn icon" /></a>
-                </div>
-                <p>Copyright 2022. All rights reserved.</p>
-            </div>
-        </section>
-    </footer>
+    <!-- FOOTER -->
+    <div id="footer"></div>
 </body>
 
 </html>

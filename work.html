@@ -11,6 +11,16 @@
 
         gtag('config', 'G-F1MSM1PRE1');
     </script>
+    <!-- Header & footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles/styles.css" />
@@ -22,24 +32,7 @@
 
 <body>
     <!-- HEADER -->
-    <header class="container flex space-between">
-        <!-- LOGO -->
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo-tram.png" alt="Tram Tran Creativity logo" /></a>
-        </div>
-        <!-- NAVBAR -->
-        <input id="menu-toggle" type="checkbox" />
-        <label class="menu-button-container" for="menu-toggle">
-            <div class="menu-button"></div>
-        </label>
-        <ul class="menu">
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="work.html">WORK</a></li>
-            <li><a href="resume.html">RESUME</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </header>
+    <div id="header"></div>
     <!-- WORK -->
     <h1 class="center-text">WORK</h1>
     <section class="work center-text container flex">
@@ -47,74 +40,57 @@
             <div class="individual-work">
                 <a href="work-the-paddy-field.html">
                     <img src="images/the-paddy-field/paddyfield-menu.jpg" alt="The Paddy Field's menu" />
-                    <h2>The Paddy Field - Vietnamese Cuisine</h2>
-                    <p>Branding; Product Design; Web Design</p>
+                        <h2>The Paddy Field - Vietnamese Cuisine</h2>
+                        <p>Branding Identity; Web Design</p>
                 </a>
             </div>
             <div class="individual-work">
-                <a href="work-cafe-des-beaux-art.html">
+                <a href="work-cafe-des-beaux-arts.html">
                     <img src="images/cafe-des-beaux-art/thumbnail-packaging-1.jpg"
                         alt="Cafe des Beaux Arts packaging mockup" />
                     <h2>Cafe des Beaux Arts</h2>
-                    <p>Branding; Packaging Design; Web Design</p>
-                </a>
-            </div>
-        </div>
-        <div class="work-group flex">
-            <div class="individual-work">
-                <a href="work-neroli.html">
-                    <img src="images/neroli/mockup-5.jpg" alt="Neroli hand cream" />
-                    <h2>Neroli Cosmetics</h2>
-                    <p>Packaging Design; Web Design</p>
-                </a>
-            </div>
-            <div class="individual-work">
-                <a href="work-me-recipes.html">
-                    <img src="images/me-recipe/cover-page.jpg" alt="Me's Recipes cover pages" />
-                    <h2>Me's Recipes</h2>
-                    <p>Layout Design</p>
+                    <p>Brand Identity; Web Design</p>
                 </a>
             </div>
         </div>
         <div class="work-group flex">
             <div class="individual-work">
                 <a href="work-kims-produce.html">
-                    <img src="images/kims-produce/logo-kimsproduce.png" alt="Kim's Produce logo" />
+                    <img src="images/kims-produce/kims-truck.jpg" alt="Kim's Produce truck" />
                     <h2>Kim's Produce</h2>
-                    <p>Branding; Product Design</p>
+                    <p>Brand Identity</p>
+            </div>
+            <div class="individual-work">
+                <a href="work-me-recipes.html">
+                    <img src="images/me-recipe/cover-page.jpg" alt="Me's Recipes cover pages" />
+                    <h2>Mẹ's Recipes</h2>
+                    <p>Layout Design</p>
+                </a>
+            </div>
+        </div>
+        <div class="work-group flex">
+            <div class="individual-work">
+                <a href="work-neroli.html">
+                    <img src="images/neroli/neroli-website.jpg" alt="Neroli website mockup" />
+                    <h2>Neroli Cosmetics</h2>
+                    <p>Logo Design; Packaging Design; UI & UX Design</p>
                 </a>
             </div>
             <div class="individual-work">
                 <a href="work-coastcon.html">
-                    <img src="images/coast-con/coastcon-logo.png" alt="CoastCon Virtuality logo" />
+                    <img src="images/coast-con/coastcon-thumbnail.jpg" alt="CoastCon Preevent website mockup" />
                     <h2>CoastCon Virtuality</h2>
-                    <p>Branding; Product Design; Web Design</p>
+                    <p>Brand Identity; UI & UX Design</p>
                 </a>
             </div>
         </div>
         <div class="center-text container">
-            <p>Download pdf version <a href="files/Tran-portfolio.pdf" download="Tran-portfolio.pdf">here</a></p>
+            <p>Download pdf version <a href="files/Tran-portoflio.pdf" download="Tran-portfolio.pdf">here</a></p>
             <hr>
         </div>
     </section>
-    <footer class="container center-text flex">
-        <section class="footer-section flex">
-            <ul class="footer-menu space-between">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="work.html">WORK</a></li>
-                <li><a href="resume.html">RESUME</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-            <div class="copyright container flex">
-                <div class="socialmedia">
-                    <a href="https://www.linkedin.com/in/tramtrank/" target="_blank"><img src="images/icon-linkedin.png"
-                            alt="LinkedIn icon" /></a>
-                </div>
-                <p>Copyright 2022. All rights reserved.</p>
-            </div>
-        </section>
-    </footer>
+    <!-- FOOTER -->
+    <div id="footer"></div>
 </body>
 
 </html>

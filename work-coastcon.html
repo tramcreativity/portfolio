@@ -11,6 +11,16 @@
 
         gtag('config', 'G-F1MSM1PRE1');
     </script>
+    <!-- Header & footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
@@ -22,45 +32,56 @@
 
 <body>
     <!-- HEADER -->
-    <header class="container flex space-between">
-        <!-- LOGO -->
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo-tram.png" alt="Tram Tran Creativity logo" /></a>
-        </div>
-        <!-- NAVBAR -->
-        <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
-        </label>
-        <ul class="menu">
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="work.html">WORK</a></li>
-            <li><a href="resume.html">RESUME</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </header>
+    <div id="header"></div>
+    <!-- HERO -->
+    <div class="project-hero coastcon-hero">
+    </div>
     <!-- PROJECT DESCRIPTION -->
     <div class="container center-text">
-        <h1>COMING SOON!</h1>
-    <footer class="container center-text flex">
-        <section class="footer-section flex">
-            <ul class="footer-menu space-between">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="work.html">WORK</a></li>
-                <li><a href="resume.html">RESUME</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-            <div class="copyright container flex">
-                <div class="socialmedia">
-                    <a href="https://www.linkedin.com/in/tramtrank/" target="_blank"><img src="images/icon-linkedin.png"
-                            alt="LinkedIn icon" /></a>
-                </div>
-                <p>Copyright 2022. All rights reserved.</p>
-            </div>
-        </section>
-    </footer>
+        <h1>CoastCon Virtuality</h1>
+        <p>IAAPA is well-known in the thrill ride industry for its annual trade show which showcases new thrill rides
+            available to theme parks around the world. However, the industry underwent significant changes in attendance
+            and handling of events due to the global pandemic of 2019-2020. To adapt to this unprecedented situation,
+            IAAPA has launched a new virtual event called CoastCon. This virtual event is designed to showcase exciting
+            new products and experiences that are available in the industry, while also providing opportunities for
+            networking and collaboration.
+            <br>
+            <br>
+            I worked with two other classmates, Alexus Jenkins, and Sarah Kouch, on this project. Even though the
+            project was originally intended for a larger group, the three of us took on the challenge with enthusiasm
+            and determination. With a tight deadline and a long list of deliverables, we divided the work evenly and
+            collaborated closely to ensure that every aspect of the project was executed to the highest standard. My
+            particular focus was on designing the brand identity package and physical products, as well as creating an
+            intuitive and seamless ticket purchase experience for attendees. I also designed the speakers’ and
+            attendees’ profile pages, ensuring that it was user-friendly and functional. It was a challenging but
+            incredibly rewarding experience that taught us the value of collaboration, time management, and creative
+            problem-solving.
+            <br>
+            <br>
+            <br><b>Category</b>: Brand Identity; Web Design
+            <br><b>Tools</b>: Adobe Photoshop, Adobe Illustrator, Figma
+        </p>
+    </div>
+    <!-- PROJECT PRESENTATION -->
+    <section class="presentation container center-text">
+        <img src="images/coast-con/coastcon-styleguide.jpg" alt="Coastcon's styleguide" />
+        <img src="images/coast-con/coastcon-stationery.jpg" alt="Coastcon's stationery" />
+        <img src="images/coast-con/coastcon-uniform.jpg" alt="Coastcon's uniform" />
+        <img src="images/coast-con/coastcon-giveaway.jpg" alt="Coastcon's giveaway merch" />
+        <img src="images/coast-con/coastcon-gift1.jpg" alt="Coastcon's notebook and tote bag" />
+        <img src="images/coast-con/coastcon-gift2.jpg" alt="Coastcon's chocolate and coffee" />
+        <img src="images/coast-con/coastcon-gift3.jpg" alt="Coastcon's trophy, tea bag and bottle" />
+        <img src="images/coast-con/coastcon-preevent.jpg" alt="Coastcon's preevent mockup" />
+        <p><a href="https://www.figma.com/proto/5Hew5L3YgRUau9ZQG6YQvD/Project?node-id=196-1141&scaling=min-zoom&page-id=196%3A1140&starting-point-node-id=196%3A1141"
+                target="_blank">View full pre-event web design here</a></p>
+        <img src="images/coast-con/coastcon-event.jpg" alt="Coastcon's event mockup" />
+        <p><a href="https://www.figma.com/proto/5Hew5L3YgRUau9ZQG6YQvD/Project?node-id=195-1265&scaling=min-zoom&page-id=195%3A4&starting-point-node-id=195%3A1265&show-proto-sidebar=1"
+                target="_blank">View full event web design here</a></p>
+        <hr>
+    </section>
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
 </body>
 
 </html>

@@ -11,6 +11,16 @@
 
         gtag('config', 'G-F1MSM1PRE1');
     </script>
+    <!-- Header & footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
@@ -22,52 +32,29 @@
 
 <body>
     <!-- HEADER -->
-    <header class="container flex space-between">
-        <!-- LOGO -->
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo-tram.png" alt="Tram Tran Creativity logo" /></a>
-        </div>
-        <!-- NAVBAR -->
-        <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
-        </label>
-        <ul class="menu">
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="work.html">WORK</a></li>
-            <li><a href="resume.html">RESUME</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </header>
+    <div id="header"></div>
     <!-- HERO -->
     <div class="project-hero me-recipe-hero">
     </div>
     <!-- PROJECT DESCRIPTION -->
     <div class="container center-text">
-        <h1>Me's Recipes</h1>
-        <p>I wanted to challenge myself with publication design, so I chose to design a recipe book. I’m
-            choosing to celebrate my Vietnamese culture and heritage by
-            making a recipe book of Vietnamese family’s daily meals. I wanted to introduce another
-            side of Vietnamese cuisine that is not only about Pho, summer rolls, or Banh-mi. A
-            Vietnamese family meal is the unique longevity culture and tradition which the local
-            people are so proud of. They are more simple, easy to cook or meal-prep for the week
-            while still carry a homey, gathering, and nostalgic feeling to the Vietnamese community. By
-            designing a Vietnamese family meals recipe book, I hope to bring this valuable custom
-            closer to Vietnamese descendants around the world, and to help make their daily
-            family meals “home away from home” feeling.
+        <h1>Mẹ's Recipes</h1>
+        <p>In order to challenge myself in publication design, I chose to create a recipe book celebrating my Vietnamese
+            culture and heritage. I wanted to showcase a lesser-known aspect of Vietnamese cuisine beyond the usual
+            dishes of Pho, summer rolls, or Banh-mi. Through this recipe book, I aimed to highlight the unique culture
+            and tradition of Vietnamese family meals, which are simple, easy to cook, and evoke a sense of hominess,
+            gathering, and nostalgia within the Vietnamese community. My goal was to bring this valuable custom closer
+            to Vietnamese descendants around the world, making their daily family meals feel like a “home away from
+            home.”
             <br>
             <br>
-            There will be a Beef, Pork, Chicken, Vegetarian/Vegan and Desserts section in this
-            recipe book.
-            <br>
-            <br>
-            I was in charge of designing the layout (content, illustration, stickers, etc.). The recipes were collected
-            from Vicky Pham's blog and Lisa Le's
-            blog.<br>
+            To achieve this, I named the recipe book “Mẹ’s Recipes,” using the most common word for “mother” in
+            Vietnamese. It delivers love from Vietnamese mothers and the beloved memories of family meals. The book
+            includes sections for Beef, Pork, Chicken, Vegetarian/Vegan, and Desserts, and features recipes collected
+            from Vicky Pham’s and Lisa Le’s blogs.<br>
             <br>
             <br><b>Category</b>: Layout Design
-            <br><b>Tools</b>: Adobe InDesign, Adobe Illustrator
+            <br><b>Tools</b>: Adobe InDesign, Adobe Illustrator, Adobe Photoshop
         </p>
     </div>
     <!-- SLIDESHOW -->
@@ -273,24 +260,7 @@
         </div>
     </section>
     <!-- FOOTER -->
-    <footer class="container center-text flex">
-        <section class="footer-section flex">
-            <ul class="footer-menu space-between">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="work.html">WORK</a></li>
-                <li><a href="resume.html">RESUME</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-            <div class="copyright container flex">
-                <div class="socialmedia">
-                    <a href="https://www.linkedin.com/in/tramtrank/" target="_blank"><img src="images/icon-linkedin.png"
-                            alt="LinkedIn icon" /></a>
-                </div>
-                <p>Copyright 2022. All rights reserved.</p>
-            </div>
-        </section>
-    </footer>
+    <div id="footer"></div>
     <!-- JAVASCRIPT -->
     <script>
         let slideIndex = 1;
