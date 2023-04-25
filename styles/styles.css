@@ -30,7 +30,7 @@ h1 {
   margin: 2rem auto 1rem;
 }
 h2 {
-  font: 600 0.875rem "Bodoni Moda", serif;
+  font: 600 0.875rem "Nunito", sans-serif;
   color: #1a361a;
 }
 p,
@@ -43,14 +43,14 @@ form textarea {
 .button {
   text-decoration: none;
   font: 500 0.625rem "Nunito", sans-serif;
-  color: #575757;
+  color: #575757 !important;
   background-color: white;
   padding: 0.438rem 0.938rem;
   border-radius: 0.938rem;
   border: 2px solid #575757;
 }
 .button:hover {
-  color: white;
+  color: white !important;
   background-color: #c5a459;
   border: #c5a459;
 }
@@ -220,6 +220,8 @@ footer ul li a:hover {
   color: #1a361a;
 }
 .socialmedia {
+  display: flex;
+  justify-content: space-evenly;
   width: 40%;
   margin: 2rem auto 0.5rem;
 }
