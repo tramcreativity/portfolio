@@ -19,7 +19,6 @@ body {
 .center-text {
   text-align: center;
 }
-
 .container {
   width: 89%;
   margin: 0 auto;
@@ -488,6 +487,10 @@ form > *:not(label) {
 }
 /* MEDIA QUERIES */
 @media (min-width: 375px) and (max-width: 768px) /* for mobile */ {
+  .text-container {
+    width: 75%;
+    margin: 0 auto;
+  }
   .menu-button-container {
     display: flex;
   }
@@ -568,6 +571,10 @@ form > *:not(label) {
   }
 }
 @media (min-width: 768px) /* for tablets */ {
+  .text-container {
+    width: 65%;
+    margin: 0 auto;
+  }
   .logo a img {
     height: 3.5rem;
   }
