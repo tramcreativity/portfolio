@@ -427,9 +427,14 @@ form > *:not(label) {
   background-position: center center;
 }
 .coastcon-hero {
-  background: url(/images/coast-con/coastcon-thumbnail.jpg) no-repeat;
+  background: url(../images/coast-con/coastcon-thumbnail.jpg) no-repeat;
   background-size: cover;
   background-position: top center;
+}
+.mandala-hero {
+  background: url(../images/mandala/mandala-website.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .presentation img {
   margin: 0.5rem auto;
